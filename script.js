@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Sayfa yüklemesi sırasında fade-in animasyonunu başlat
+ 
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
         section.classList.add('fade');
         setTimeout(() => {
             section.classList.add('fade-in');
-        }, 100); // Biraz gecikmeli olarak görünür yap
+        }, 100); 
     });
 
-    // Navbar'da aktif sayfayı vurgulamak için
+    
     const pageLinks = document.querySelectorAll('.navbar ul li a');
 
     pageLinks.forEach(link => {
@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Yumuşak scroll özelliği
+    
     function smoothScroll(target) {
         const targetElement = document.getElementById(target);
         window.scrollTo({
-            top: targetElement.offsetTop - 80, // Navbar yüksekliği kadar kaydırmayı düzelt
+            top: targetElement.offsetTop - 80,
             behavior: 'smooth'
         });
     }
 
-    // Sayfa kaydırıldıkça butonu göstermek
+    
     const toTopButton = document.createElement('button');
     toTopButton.innerText = '↑';
     toTopButton.classList.add('to-top');
