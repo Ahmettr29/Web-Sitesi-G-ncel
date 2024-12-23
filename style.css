@@ -1,4 +1,4 @@
-/* Genel Ayarlar */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body, html {
     transition: background 0.3s ease;
 }
 
-/* Navbar Stil */
+
 .navbar {
     width: 100%;
     height: 100px;
@@ -56,12 +56,12 @@ body, html {
     border-radius: 2px;
 }
 
-/* Sayfa Bölümleri */
+
 .section {
     padding: 120px 40px;
     margin-top: 100px;
     background: rgba(76, 175, 80, 0.6) url('olabilir.jpg') center/cover no-repeat;
-    height: 50vh;  /* Yüksekliği yarıya düşürdüm */
+    height: 50vh; 
     margin-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -102,7 +102,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Hakkımda Bölümü */
 #hakkimda {
     display: flex;
     flex-direction: column;
@@ -115,14 +114,14 @@ a:hover {
 }
 
 .hakkimda-image {
-    width: 500%;  /* Resmi %500 oranında büyüttüm */
+    width: 500%;  
     height: 500px;
     border-radius: 10px;
     display: block;
     margin-top: 20px;
 }
 
-/* Ana Sayfa Resimleri Yan Yana */
+
 .image-container {
     display: flex;
     justify-content: space-between;
@@ -130,13 +129,13 @@ a:hover {
 }
 
 .image-container img {
-    width: 48%; /* Resmin genişliğini %48 yaparak iki resmi yan yana koyar */
+    width: 48%; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Kodlama Resmini Diğer Resimle Aynı Boyut Yap */
+
 .image-container img:first-child {
     width: 48%;
 }
@@ -145,23 +144,23 @@ a:hover {
     width: 48%;  
 }
 
-/* İletişim Bölümü */
+
 #iletisim {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Dikey hizalama */
+    justify-content: flex-start;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: 120px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    width: 100%;  /* Genişlik ayarlandı */
-    max-width: 900px;  /* Maksimum genişlik sınırlandı */
-    margin-left: auto;  /* Ortalamak için */
-    margin-right: auto;  /* Ortalamak için */
-    background: transparent;  /* Arka plan şeffaf yapıldı */
+    width: 100%; 
+    max-width: 900px;  
+    margin-left: auto;  
+    margin-right: auto;  
+    background: transparent; 
 }
 
 #iletisim.fade-in {
@@ -239,7 +238,6 @@ form button:hover {
 }
 
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
@@ -252,7 +250,7 @@ form button:hover {
     }
 
     .image-container img {
-        width: 100%; /* Mobilde resimler alt alta gelecek şekilde düzenlendi */
+        width: 100%; 
     }
 
     .navbar ul li a {
@@ -260,7 +258,7 @@ form button:hover {
         font-size: 20px;
     }
 
-    /* İletişim Formu */
+    
     #iletisim form label, #iletisim form button, #iletisim h1, #iletisim h2 {
         font-size: 1.2em;
     }
